@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposite Request</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <div class="hero">
+            <h1>Deposite Request</h1>
+            <div class="main-div">
+                <div class="card left-card">
+                    <form id="transaction-form">
+                        <label for="amount">Amount</label>
+                        <input type="text" name="amount" id="amount" placeholder="Amount" value="850">
+                        
+                        <label for="transaction-type">Transaction Type</label>
+                        <input type="text" name="transaction-type" id="transaction-type" placeholder="Transaction Type" value="362254235645">
+                        
+                        <label for="redirect-url">Redirect URL</label>
+                        <input type="text" name="redirect-url" id="redirect-url" placeholder="Redirect URL" value="https://documenter.getpostman.com/view/33775780/2sAXjRVUhw#5f700cd2-9071-49fb-9e56-69d95ef49032">
+                        
+                        <label for="callback-url">Callback URL</label>
+                        <input type="text" name="callback-url" id="callback-url" placeholder="Callback URL" value="https://documenter.getpostman.com/view/33775780/2sAXjRVUhw#5f700cd2-9071-49fb-9e56-69d95ef49032">
+                        
+                        <label for="customer-name">Customer Name</label>
+                        <input type="text" name="customer-name" id="customer-name" placeholder="Customer Name" value="somya ranjan Behera">
+                        
+                        <label for="customer-email">Customer Email</label>
+                        <input type="text" name="customer-email" id="customer-email" placeholder="Customer Email" value="somyaranjan048@gmail.com">
+                        
+                        <label for="customer-phone">Customer Phone</label>
+                        <input type="text" name="customer-phone" id="customer-phone" placeholder="Customer Phone" value="9078782444">
+                        
+                        <input class="submit-btn" type="submit" value="Submit">
+                    </form>
+                </div>
+                <div class="card right-card" id="details-card" style="display:none;">
+                    <div class="details">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Amount:</td>
+                                    <td id="display-amount"></td>
+                                </tr>
+                                <tr>
+                                    <td>Transaction Type:</td>
+                                    <td id="display-transaction-type"></td>
+                                </tr>
+                                <tr>
+                                    <td>Redirect URL:</td>
+                                    <td id="display-redirect-url"></td>
+                                </tr>
+                                <tr>
+                                    <td>Callback URL:</td>
+                                    <td id="display-callback-url"></td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Name:</td>
+                                    <td id="display-customer-name"></td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Email:</td>
+                                    <td id="display-customer-email"></td>
+                                </tr>
+                                <tr>
+                                    <td>Customer Phone:</td>
+                                    <td id="display-customer-phone"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

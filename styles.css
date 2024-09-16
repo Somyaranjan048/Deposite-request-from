@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: rgb(33, 33, 33);
+}
+.container {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 950px;
+    border-radius: 12px; 
+    padding: 20px;
+    margin: 20px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.main-div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    
+}
+.card {
+    background-color: rgb(33, 33, 33);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+}
+.left-card {
+    width: 100%;
+}
+.right-card {
+    display: none;
+    width: 50%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+h1 {
+    width: 100%;
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    color: #FF6C37;
+    text-align: center;
+    border-top-left-radius: 12px; 
+    border-top-right-radius: 12px;
+}
+
+/* Form container */
+form {
+    display: grid;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Labels */
+label {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #f9f8f6; /* Darker color for better readability */
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(43, 43, 43); ;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+    font-size: 1em; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #f9f8f6;
+}
+/* Submit button */
+.submit-btn {
+    padding: 12px;
+    background-color: #098cf7; /* Vibrant background color */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.submit-btn:hover {
+    background-color: #007bff; 
+    transform: translateY(-2px); 
+}
+
+.submit-btn:active {
+    background-color: #0056b3;
+    transform: translateY(0); 
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container{
+        height: 100vh;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+    }
+    .hero {
+        margin-top: -30px;
+        width: 90%; 
+    }
+
+    .main-div {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .left-card,
+    .right-card {
+        width: 100%; /* Full width for both cards */
+    }
+
+    .right-card {
+        display: block; /* Show the right card on small screens */
+    }
+}
+
+
+/* Table styles */
+table {
+    table-layout: fixed; 
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between table cells */
+}
+
+/* Table cell content */
+tbody td {
+    word-wrap: break-word; /* Ensure long text wraps */
+    word-break: break-all; /* Break long words at any point */
+    white-space: normal; /* Allow text to wrap */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top; /* Align text to the top of the cell */
+    color: #f9f8f6;
+}
+
+/* Set max width for table cells */
+td {
+    max-width: 300px; /* Limit cell width */
+    overflow-wrap: break-word; /* Ensure long text wraps */
+}
